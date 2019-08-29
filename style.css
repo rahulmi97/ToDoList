@@ -1,0 +1,42 @@
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.left{
+    float: left;
+    width: 50%;
+
+}
+.right{
+    float: right;
+    width: 50%;
+
+}
+ .row::after{
+    content: "";
+    clear: both;
+    display: block;
+    
+} 
+#h1{
+    background-color: aqua;
+    border: 1px solid lightgray;
+}
+#id{
+    border: none;
+}
+i{
+    cursor: pointer;
+}
+#find{
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.bg{
+   background-color: cyan
+}
