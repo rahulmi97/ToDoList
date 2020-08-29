@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
-   
+   <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/awecons-business-part2/24/Business_Add_new-512.png" type="image/gif" sizes="16x16">
    <script src="Model/Model.js"></script>
    <script src="Model/ModelOper.js"></script>
    <script src="controller/controller.js"></script>
@@ -25,16 +22,16 @@
    
     </div>
     <div class="form-group">
-        <label for="id">Work Name</label>
-       <input class="form-control" type="text" placeholder="type work"  name="" id="name">
+        <label for="name">Work Name</label>
+       <input class="form-control" type="text" placeholder="type work"  name="" id="name" required>
        </div>
     <div class="form-group">  
-        <label for="name">Description</label>
+        <label for="description">Description</label>
       <textarea  class="form-control" placeholder="type question here" name="" id="description" cols="20" rows="6"></textarea>
     </div>
     <div class="form-group">
-        <label for="id">END Date</label>
-   <input type="date" class="form-control" name="" id="date">
+        <label for="date">END Date</label>
+   <input type="date" class="form-control" name="" id="date" >
        </div>
        <div>
             <button id="add" class='btn btn-primary mr-2'><i class="fas fa-plus-square"></i>&nbsp;Add</button>
@@ -44,6 +41,13 @@
  <!-- </div> -->
  <div id="list" class="container">
      <h1 id="h1">PENDING WORKS <span id="counter"></span></h1>
+        
+        <button id="delete" class='btn btn-danger mr-2'><i class="fas fa-trash-alt"></i> &nbsp;Delete</button>
+        <button id="edit" class="btn btn-success mr-2"><i class="fas fa-pen"></i>&nbsp; EDIT &nbsp;</button>
+        <button id="search" class="btn btn-info mr-2"><i class="fab fa-searchengin"></i>&nbsp; SEARCH &nbsp;</button>
+<div id="inp">   
+         <input type="text" id="find" placeholder="search here" ><i id="i" class="fab fa-searchengin"></i></input>
+        </div>
     <table style="margin:5px" class="table table-bordered">
         <thead class="thead-dark">
             <tr>
@@ -59,18 +63,12 @@
         <tbody id="body">
 
         </tbody>
-        
-        <!-- <button id="save" class="btn btn-warning mr-2"><i class="far fa-save"></i>&nbsp; save</button> -->
-        <button id="delete" class='btn btn-danger mr-2'><i class="fas fa-trash-alt"></i> &nbsp;Delete</button>
-        <button id="edit" class="btn btn-success mr-2"><i class="fas fa-pen"></i>&nbsp; EDIT &nbsp;</button>
-        <button id="search" class="btn btn-info mr-2"><i class="fab fa-searchengin"></i>&nbsp; SEARCH &nbsp;</button>
-<div id="inp">   
-         <input type="text" id="find" placeholder="search here" ><i id="i" class="fab fa-searchengin"></i></input>
-        </div>
-
     </table>
+     
+
+    
  </div>
-<!-- </div> -->
+</div>
  
     
 </body>
